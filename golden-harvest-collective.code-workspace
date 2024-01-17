@@ -1,0 +1,47 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "app"
+    },
+    {
+      "path": "api"
+    }
+  ],
+  "settings": {
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/bower_components": true,
+      "**/*.code-search": true,
+      "**/dist": true,
+      "**/coverage": true
+    },
+    "files.eol": "\n",
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true,
+      ".vscode": true
+    },
+    "editor.formatOnSave": true,
+    "editor.linkedEditing": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "eslint.validate": ["json"],
+    "editor.tabSize": 2
+  },
+  "extensions": {
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "eamodio.gitlens",
+      "christian-kohler.path-intellisense",
+      "esbenp.prettier-vscode",
+      "dsznajder.es7-react-js-snippets",
+      "yzhang.markdown-all-in-one"
+    ]
+  }
+}
