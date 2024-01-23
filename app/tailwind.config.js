@@ -25,6 +25,9 @@ export default {
         error: 'var(--error)',
         success: 'var(--success)',
       },
+      height: {
+        page: 'calc(100vh - 20px)',
+      },
     },
   },
   plugins: [],
