@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.scss';
 import { Outlet } from 'react-router-dom';
-import Header from './components/omi-header/omi-header';
+import Header from './components/header/header';
 
 function App() {
   const modes = ['light', 'dark'];

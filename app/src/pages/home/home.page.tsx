@@ -3,8 +3,8 @@ import Logo from '../../assets/logo.jpg';
 
 const Home = () => {
   return (
-    <div className="min-h-page mt-16 flex w-full flex-row ">
-      <div className="flex h-full basis-2/3 flex-col justify-center gap-6 bg-primary p-20">
+    <div className="min-h-page flex w-full flex-row ">
+      <div className="flex h-full basis-full flex-col justify-center gap-6 bg-primary p-20 sm:basis-2/3">
         <h1 className="text-7xl font-bold text-white">
           100% Pure Raw Honey. Locally Sourced.
         </h1>
@@ -16,7 +16,7 @@ const Home = () => {
           View Products
         </button>
       </div>
-      <div className="flex h-full basis-1/3 flex-col justify-center p-0 lg:p-14">
+      <div className="hidden h-full basis-1/3 flex-col justify-center p-0 sm:flex lg:p-14">
         <img src={Logo} alt="logo" />
       </div>
     </div>

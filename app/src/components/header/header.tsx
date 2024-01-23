@@ -8,7 +8,7 @@ const Header = () => {
           Golden Harvest Collective
         </a>
         <span
-          className="flex items-center gap-5
+          className="hidden items-center gap-5 sm:flex
         "
         >
           <a className="text-base text-accent" href="/">
