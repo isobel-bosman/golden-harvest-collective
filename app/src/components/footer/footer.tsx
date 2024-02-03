@@ -2,27 +2,26 @@ import React from 'react';
 import InstagramLogo from '../../assets/icons/instagram-logo.wine.svg';
 import WhatsAppLogo from '../../assets/icons/whatsapp-logo.svg';
 import { Bounce, ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'
-
+import 'react-toastify/dist/ReactToastify.css';
 
 const Footer = () => {
   const handleClick = () => {
     navigator.clipboard.writeText('+27815258959');
     toast.success('Copied to clipboard 🐝', {
-      position: "bottom-left",
+      position: 'bottom-left',
       autoClose: 5000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-      theme: "dark",
+      theme: 'dark',
       transition: Bounce,
-      });
+    });
   };
 
   return (
-    <div className="bottom-0 z-10  w-full bg-secondary shadow">
+    <div className="bottom-0 z-10 w-full bg-secondary shadow">
       <div className="flex w-full flex-col gap-5 p-10 px-5 sm:px-10">
         <a className="text-lg font-semibold text-accent" href="/">
           GHC
