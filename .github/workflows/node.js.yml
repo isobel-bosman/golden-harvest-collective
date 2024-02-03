@@ -13,15 +13,15 @@ jobs:
   build:
   
     runs-on: ubuntu-latest
-    env:
-      working-direcorty: ./app
+    defaults:
+      run:
+        working-directory: ./app
     strategy:
       matrix:
         node-version: [20.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
     - uses: actions/checkout@v3
-    - working-directory: ${{working-direcorty}}
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
