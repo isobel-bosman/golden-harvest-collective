@@ -7,7 +7,7 @@ import HexagonGrid from '../../components/hexagon-grid/hexagon-grid';
 const Home = () => {
   return (
     <div className="flex w-full flex-col overflow-x-hidden">
-      <div className="flex min-h-page w-full flex-row ">
+      <div className="flex h-screen w-full flex-row ">
         <div className="flex h-full basis-full flex-col justify-center gap-6 bg-primary p-10 sm:basis-2/3 sm:p-20">
           <h1 className="text-7xl font-bold text-white">
             100% Pure Raw Honey. Locally Sourced.
@@ -48,7 +48,7 @@ const Home = () => {
         </div>
       </div>
       <div className="flex w-full flex-wrap justify-center bg-secondary p-10">
-        <h2 className="mb-10 basis-full text-center text-3xl font-bold text-primary">
+        <h2 className="mb-0 basis-full text-center text-3xl font-bold text-primary">
           Flavours of the Month
         </h2>
         <HexagonGrid className="w-full overflow-hidden sm:w-3/4 md:w-1/3 ">
@@ -66,6 +66,11 @@ const Home = () => {
           <Hexagon />
           <Hexagon />
         </HexagonGrid>
+      </div>
+      <div className="h-page flex w-full flex-wrap justify-center bg-slate-200 p-10">
+        <h2 className="mb-0 basis-full text-center text-3xl font-bold text-primary">
+          Flavours of the Month
+        </h2>
       </div>
     </div>
   );
