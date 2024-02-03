@@ -7,10 +7,7 @@ const Header = () => {
         <a className="text-lg font-semibold text-accent" href="/">
           Golden Harvest Collective
         </a>
-        <span
-          className="hidden items-center gap-5 sm:flex
-        "
-        >
+        <span className="hidden items-center gap-5 sm:flex">
           <a className="text-base text-accent" href="/">
             Home
           </a>

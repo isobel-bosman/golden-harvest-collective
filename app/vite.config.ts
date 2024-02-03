@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import EnvironmentPlugin from 'vite-plugin-environment';
 import vitePluginCommonJS from 'vite-plugin-commonjs';
 import viteTsconfigPaths from 'vite-tsconfig-paths';
 import dns from 'dns';
@@ -14,7 +13,6 @@ export default defineConfig({
     react(),
     viteTsconfigPaths(),
     // eslint(),
-    EnvironmentPlugin('all'),
     vitePluginCommonJS(),
   ],
   server: {
