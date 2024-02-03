@@ -4,6 +4,7 @@ import EnvironmentPlugin from 'vite-plugin-environment';
 import vitePluginCommonJS from 'vite-plugin-commonjs';
 import viteTsconfigPaths from 'vite-tsconfig-paths';
 import dns from 'dns';
+import svgr from '@svgr/rollup';
 
 dns.setDefaultResultOrder('verbatim');
 
@@ -13,7 +14,7 @@ export default defineConfig({
   plugins: [
     react(),
     viteTsconfigPaths(),
-    // eslint(),
+    svgr(),
     EnvironmentPlugin('all'),
     vitePluginCommonJS(),
   ],
