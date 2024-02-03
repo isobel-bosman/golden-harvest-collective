@@ -1,12 +1,11 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import EnvironmentPlugin from 'vite-plugin-environment';
-import vitePluginCommonJS from 'vite-plugin-commonjs';
-import viteTsconfigPaths from 'vite-tsconfig-paths';
-import dns from 'dns';
-import svgr from '@svgr/rollup';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import vitePluginCommonJS from 'vite-plugin-commonjs'
+import viteTsconfigPaths from 'vite-tsconfig-paths'
+import dns from 'dns'
+import svgr from '@svgr/rollup'
 
-dns.setDefaultResultOrder('verbatim');
+dns.setDefaultResultOrder('verbatim')
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -14,8 +13,7 @@ export default defineConfig({
   plugins: [
     react(),
     viteTsconfigPaths(),
-    svgr(),
-    EnvironmentPlugin('all'),
+    // eslint(),
     vitePluginCommonJS(),
   ],
   server: {
@@ -34,10 +32,10 @@ export default defineConfig({
               .toString()
               .split('node_modules/')[1]
               .split('/')[0]
-              .toString();
+              .toString()
           }
         },
       },
     },
   },
-});
+})
