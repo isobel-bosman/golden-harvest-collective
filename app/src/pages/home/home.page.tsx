@@ -3,7 +3,7 @@ import Logo from '../../assets/logo.jpg';
 
 const Home = () => {
   return (
-    <div className="flex h-page w-full flex-row ">
+    <div className="min-h-page flex w-full flex-row ">
       <div className="flex h-full basis-full flex-col justify-center gap-6 bg-primary p-20 sm:basis-2/3">
         <h1 className="text-7xl font-bold text-white">
           100% Pure Raw Honey. Locally Sourced.
