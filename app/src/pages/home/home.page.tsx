@@ -76,7 +76,7 @@ const Home = () => {
       </RevealOnScroll>
       <div className="h-page flex w-full flex-wrap justify-center bg-slate-200 p-10">
         <h2 className="mb-0 basis-full text-center text-3xl font-bold text-primary">
-          Flavours of the Month
+          Conatct Us
         </h2>
       </div>
     </div>
