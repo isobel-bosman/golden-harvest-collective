@@ -26,7 +26,7 @@ export default {
         success: 'var(--success)',
       },
       height: {
-        page: 'calc(100vh - 15px)',
+        page: 'calc(100vh - 50px)',
       },
     },
   },

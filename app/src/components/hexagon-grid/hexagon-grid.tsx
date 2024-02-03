@@ -7,7 +7,7 @@ type HexagonGridProps = PropsWithChildren & {
 
 const HexagonGrid = ({ className, children }: HexagonGridProps) => {
   return (
-    <ul className={className}>
+    <ul className={`${className} hexGrid `}>
       {children}
       {/* <li className="hex">
         <a className="hexIn" href="#">
