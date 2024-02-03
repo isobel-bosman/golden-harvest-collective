@@ -29,5 +29,6 @@ jobs:
         cache: 'npm'
         cache-dependency-path: 'app/package-lock.json'
     - run: |
+          - ls
           - npm install
           - npm run build
