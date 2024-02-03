@@ -56,8 +56,8 @@
   left: -1%; /* prevent line on the right where background doesn't cover image */
   padding: 5%;
   box-sizing: border-box;
-  background-color: rgba(0, 128, 128, 0.8);
-  font-weight: 300;
+  background-color: rgba(230, 158, 38, 0.8);
+  font-weight: 500;
   transition:
     transform 0.2s ease-out,
     opacity 0.3s ease-out;
@@ -66,7 +66,7 @@
 .hex h1 {
   bottom: 50%;
   padding-top: 50%;
-  font-size: 1.5em;
+  font-size: 1em;
   z-index: 1;
   transform: translateY(-100%) translatez(-1px);
 }
@@ -84,6 +84,7 @@
 .hex p {
   top: 50%;
   padding-bottom: 50%;
+  font-size: 1em;
   transform: translateY(100%) translatez(-1px);
 }
 
