@@ -1,6 +1,5 @@
 import React, { PropsWithChildren } from 'react';
 import Multiflora from '../../assets/images/Multiflora.jpeg';
-// import '../hexagon-grid/hexagon-grid.scss';
 
 type HexagonProps = PropsWithChildren & {
   title?: string;
