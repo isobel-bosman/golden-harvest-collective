@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="fixed top-0 z-10 h-16 w-full bg-secondary shadow">
       <div className="flex h-full w-full items-center justify-between px-5 sm:px-20">
-        <a className="text-xl font-semibold text-accent" href="/">
+        <a className="text-xl font-light text-accent" href="/">
           Golden Harvest Collective
         </a>
         <span className="hidden items-center gap-5 sm:flex">
