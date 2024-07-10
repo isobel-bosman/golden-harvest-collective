@@ -8,18 +8,24 @@ const Header = () => {
           Golden Harvest Collective
         </a>
         <span className="hidden items-center gap-5 sm:flex">
-          <a className="text-base text-accent" href="/">
+          <a className="text-base text-accent" href="#home">
             Home
           </a>
-          <a className="text-base text-accent" href="/">
+          <a className="text-base text-accent" href="#about-us">
             About Us
           </a>
-          <a className="text-base text-accent" href="/">
+          <a className="text-base text-accent" href="#seasonal-varieties">
+            Seasonal Variaties
+          </a>
+          <a className="text-base text-accent" href="#sales">
+            Sales
+          </a>
+          <a className="text-base text-accent" href="#contact-us">
             Contact Us
           </a>
           <a
             className="rounded bg-accent px-5 py-3 text-base text-secondary"
-            href="/"
+            href="#seasonal-varieties"
           >
             View Products
           </a>
