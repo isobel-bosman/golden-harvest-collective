@@ -1,8 +1,12 @@
 import React from 'react';
 import QRCode from '../../../../assets/images/qr-code.png';
-import MultiCardCarousel from '../../../../components/multi-card-carousel/multi-card-carousel';
+import { getStandardPriceList } from '../../../../components/price-lists/standard-price-list.function';
+import { getBulkSalesList } from '../../../../components/price-lists/bulk-price-list.function';
 
 const Sales = () => {
+  const priceList = getStandardPriceList();
+  const builkList = getBulkSalesList();
+
   return (
     <div
       id="sales"
@@ -18,95 +22,26 @@ const Sales = () => {
             Price List
           </h3>
           <div className="flex flex-wrap ">
-            <div className="flex basis-full justify-between items-center">
-              <h4 className="text-secondary w-40 text-lg font-medium ">
-                Raw Honey
-              </h4>
-              <hr className="w-full border-primary" />
-            </div>
-            <div className="flex basis-full justify-between">
-              <p className="text-secondary ">375g (squeeze) </p>
-              <p className="text-secondary ">R60 </p>
-            </div>
-            <div className="flex basis-full justify-between">
-              <p className="text-secondary ">500g (squeeze) </p>
-              <p className="text-secondary ">R80 </p>
-            </div>
-            <div className="flex basis-full justify-between">
-              <p className="text-secondary ">1Kg (squeeze) </p>
-              <p className="text-secondary ">R140 </p>
-            </div>
-            <div className="flex basis-full justify-between">
-              <p className="text-secondary ">1.5Kg (tub) </p>
-              <p className="text-secondary ">R200 </p>
-            </div>
-            <div className="flex basis-full justify-between">
-              <p className="text-secondary ">7Kg (tub) </p>
-              <p className="text-secondary ">R785 </p>
-            </div>
-
-            <div className="mt-4 flex basis-full justify-between items-center">
-              <h4 className="text-secondary w-56 text-lg font-medium ">
-                Creamed Honey
-              </h4>
-              <hr className="basis-full border-primary" />
-            </div>
-            <div className="flex basis-full justify-between">
-              <p className="text-secondary ">300g ALOE </p>
-              <p className="text-secondary ">R50 </p>
-            </div>
-
-            <div className="mt-4 flex basis-full justify-between items-center">
-              <h4 className="text-secondary w-44 text-lg font-medium ">
-                Honeycomb
-              </h4>
-              <hr className="basis-full border-primary" />
-            </div>
-            <div className="flex basis-full justify-between">
-              <p className="text-secondary ">350g</p>
-              <p className="text-secondary ">R65 </p>
-            </div>
-
-            <div className="mt-4 flex basis-full justify-between items-center">
-              <h4 className="text-secondary text-lg font-medium w-40">
-                Gift Favours
-              </h4>
-              <hr className="basis-full border-primary" />
-            </div>
-            <div className="flex basis-full justify-between">
-              <p className="text-secondary ">165g</p>
-              <p className="text-secondary ">R43 </p>
-            </div>
-
-            <div className="mt-4 flex basis-full justify-between items-center">
-              <h4 className="text-secondary text-lg font-medium w-60">
-                Food Grade Wax
-              </h4>
-              <hr className="basis-full border-primary" />
-            </div>
-            <div className="flex basis-full justify-between">
-              <p className="text-secondary ">per Kg</p>
-              <p className="text-secondary ">R280 </p>
-            </div>
-
-            <div className="mt-4 flex basis-full justify-between items-center">
-              <h4 className="text-secondary text-lg font-medium w-40">
-                Bulk Orders
-              </h4>
-              <hr className="basis-full border-primary" />
-            </div>
-            <div className="flex basis-full justify-between">
-              <p className="text-secondary ">375g x 24 (box)</p>
-              <p className="text-secondary ">R1300</p>
-            </div>
-            <div className="flex basis-full justify-between">
-              <p className="text-secondary ">500g x 24 (box)</p>
-              <p className="text-secondary ">R1725</p>
-            </div>
-            <div className="flex basis-full justify-between">
-              <p className="text-secondary ">1Kg x 12 (box)</p>
-              <p className="text-secondary ">R1620</p>
-            </div>
+            {priceList.map((list) => {
+              return (
+                <>
+                  <div className="flex mt-4 basis-full justify-between items-center">
+                    <h4 className="text-secondary min-w-fit mr-2 text-lg font-medium ">
+                      {list.heading}
+                    </h4>
+                    <hr className="w-full border-primary" />
+                  </div>
+                  {list.products.map((product) => {
+                    return (
+                      <div className="flex basis-full justify-between">
+                        <p className="text-secondary ">{product.description}</p>
+                        <p className="text-secondary ">{product.price}</p>
+                      </div>
+                    );
+                  })}
+                </>
+              );
+            })}
           </div>
         </div>
 
@@ -134,44 +69,30 @@ const Sales = () => {
           </h3>
 
           <div className="flex flex-wrap">
-            <div className="flex basis-full justify-between items-center">
-              <h4 className="text-secondary text-lg font-medium max-w-64">
-                Wildflower and Cosmos
-              </h4>
-              <hr className="basis-full border-primary" />
-            </div>
-            <div className="flex basis-full justify-between">
-              <p className="text-secondary ">up to 200kg</p>
-              <p className="text-secondary font-medium">R85.00 pkg</p>
-            </div>
-            <div className="flex basis-full justify-between">
-              <p className="text-secondary ">201 - 999kg</p>
-              <p className="text-secondary font-medium">R80.00 pkg</p>
-            </div>
-            <div className="flex basis-full justify-between">
-              <p className="text-secondary ">over 1000kg</p>
-              <p className="text-secondary font-medium">R75.00 pkg</p>
-            </div>
-
-            <div className="mt-6 flex basis-full justify-between items-center">
-              <h4 className="text-secondary text-lg font-medium max-w-96">
-                Seasonal Premium Varieties
-              </h4>
-              <hr className="w-full border-primary" />
-            </div>
-            <div className="flex basis-full justify-between">
-              <p className="text-secondary ">up to 200kg</p>
-              <p className="text-secondary font-medium">R90.00 pkg</p>
-            </div>
-            <div className="flex basis-full justify-between">
-              <p className="text-secondary ">201 - 999kg</p>
-              <p className="text-secondary font-medium">R85.00 pkg</p>
-            </div>
-            <div className="flex basis-full justify-between">
-              <p className="text-secondary ">over 1000kg</p>
-              <p className="text-secondary font-medium">R75.00 pkg</p>
-            </div>
+            {builkList.map((bulk) => {
+              return (
+                <>
+                  <div className="flex mt-4 basis-full justify-between items-center">
+                    <h4 className="text-secondary text-lg mr-2 font-medium max-w-64 min-w-fit">
+                      {bulk.heading}
+                    </h4>
+                    <hr className="basis-full border-primary" />
+                  </div>
+                  {bulk.products.map((product) => {
+                    return (
+                      <div className="flex basis-full justify-between">
+                        <p className="text-secondary ">{product.description}</p>
+                        <p className="text-secondary font-medium">
+                          {product.price}
+                        </p>
+                      </div>
+                    );
+                  })}
+                </>
+              );
+            })}
           </div>
+
           <p className="mt-6 text-secondary ">
             Please contact Shane Boyd at shane@goldenharvestco.co.za for
             enquiries

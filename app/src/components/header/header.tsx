@@ -25,7 +25,7 @@ const Header = () => {
           </a>
           <a
             className="rounded bg-accent px-5 py-3 text-base text-secondary min-w-fit"
-            href="#seasonal-varieties"
+            href="#products"
           >
             View Products
           </a>
