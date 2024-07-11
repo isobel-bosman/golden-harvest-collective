@@ -25,8 +25,8 @@ export default {
         error: 'var(--error)',
         success: 'var(--success)',
       },
-      minHeight: {
-        page: 'calc(100vh - 20px)',
+      height: {
+        page: 'calc(100vh - 50px)',
       },
     },
   },

@@ -9,12 +9,7 @@ dns.setDefaultResultOrder('verbatim');
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '',
-  plugins: [
-    react(),
-    viteTsconfigPaths(),
-    // eslint(),
-    vitePluginCommonJS(),
-  ],
+  plugins: [react(), viteTsconfigPaths(), vitePluginCommonJS()],
   server: {
     // this ensures that the browser opens upon server start
     open: false,

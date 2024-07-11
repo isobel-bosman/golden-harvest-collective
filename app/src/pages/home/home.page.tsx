@@ -1,24 +1,37 @@
 import React from 'react';
-import Logo from '../../assets/logo.jpg';
+
+import RevealOnScroll from '../../components/reveal-on-scroll/reveal-on-scroll';
+import LandingSection from './sections/landing-section/landing-section';
+import AboutUs from './sections/about-us/about-us';
+import SeasonalVarieties from './sections/seasonal-varieties/seasonal-varieties';
+import Sales from './sections/sales/sales';
+import ContactUs from './sections/contact-us/contact-us';
+import Products from './sections/products/products';
 
 const Home = () => {
   return (
-    <div className="min-h-page flex w-full flex-row ">
-      <div className="flex h-full basis-full flex-col justify-center gap-6 bg-primary p-20 sm:basis-2/3">
-        <h1 className="text-7xl font-bold text-white">
-          100% Pure Raw Honey. Locally Sourced.
-        </h1>
-        <h2 className="text-lg font-semibold text-secondary">
-          The Golden Harvest Collective offers a lush variety of raw honey
-          products sourced from local South African farmers.
-        </h2>
-        <button className="w-fit rounded bg-secondary px-5 py-3 font-medium text-white">
-          View Products
-        </button>
-      </div>
-      <div className="hidden h-full basis-1/3 flex-col justify-center p-0 sm:flex lg:p-14">
-        <img src={Logo} alt="logo" />
-      </div>
+    <div className="flex w-full flex-col overflow-x-hidden">
+      <LandingSection />
+
+      <RevealOnScroll>
+        <AboutUs />
+      </RevealOnScroll>
+
+      <RevealOnScroll>
+        <Products />
+      </RevealOnScroll>
+
+      <RevealOnScroll>
+        <SeasonalVarieties />
+      </RevealOnScroll>
+
+      <RevealOnScroll>
+        <Sales />
+      </RevealOnScroll>
+
+      <RevealOnScroll>
+        <ContactUs />
+      </RevealOnScroll>
     </div>
   );
 };
