@@ -115,7 +115,7 @@ const Sales = () => {
             Buy Now
           </h3>
           <p className="my-5 text-center">
-            Scan this code to browse our Whatsapp catalouge (or simply click on
+            Scan this code to browse our WhatsApp catalogue (or simply click on
             it)
           </p>
           <div className="flex items-center sm:p-10 p-5">
