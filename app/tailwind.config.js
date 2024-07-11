@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: ['.index.html', './src/**/*.{html,jsx,ts,tsx}'],
   theme: {
@@ -27,6 +26,9 @@ export default {
       },
       height: {
         page: 'calc(100vh - 50px)',
+      },
+      backgroundImage: {
+        bees: "url('./src/assets/images/about-us/bees.jpg')",
       },
     },
   },

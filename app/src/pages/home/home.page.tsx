@@ -7,6 +7,7 @@ import SeasonalVarieties from './sections/seasonal-varieties/seasonal-varieties'
 import Sales from './sections/sales/sales';
 import ContactUs from './sections/contact-us/contact-us';
 import Products from './sections/products/products';
+import BecomeDistributor from './sections/become-a-distributor/become-a-distributor';
 
 const Home = () => {
   return (
@@ -27,6 +28,10 @@ const Home = () => {
 
       <RevealOnScroll>
         <Sales />
+      </RevealOnScroll>
+
+      <RevealOnScroll>
+        <BecomeDistributor />
       </RevealOnScroll>
 
       <RevealOnScroll>
