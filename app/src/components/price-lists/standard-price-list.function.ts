@@ -6,23 +6,23 @@ export const getStandardPriceList = (): PriceList[] => {
       heading: 'Raw Honey',
       products: [
         {
-          description: '375g (squeeze)',
+          name: '375g (squeeze)',
           price: 'R60',
         },
         {
-          description: '500g (squeeze)',
+          name: '500g (squeeze)',
           price: 'R80',
         },
         {
-          description: '1Kg (squeeze)',
+          name: '1Kg (squeeze)',
           price: 'R140',
         },
         {
-          description: '1.5Kg (tub)',
+          name: '1.5Kg (tub)',
           price: 'R200',
         },
         {
-          description: '7Kg (tub)',
+          name: '7Kg (tub)',
           price: 'R785',
         },
       ],
@@ -31,7 +31,7 @@ export const getStandardPriceList = (): PriceList[] => {
       heading: 'Creamed Honey',
       products: [
         {
-          description: '300g ALOE',
+          name: '300g ALOE',
           price: 'R50',
         },
       ],
@@ -40,7 +40,7 @@ export const getStandardPriceList = (): PriceList[] => {
       heading: 'Honeycomb',
       products: [
         {
-          description: '350g',
+          name: '350g',
           price: 'R65',
         },
       ],
@@ -49,7 +49,7 @@ export const getStandardPriceList = (): PriceList[] => {
       heading: 'Gift Favours',
       products: [
         {
-          description: '165g',
+          name: '165g',
           price: 'R43',
         },
       ],
@@ -58,7 +58,7 @@ export const getStandardPriceList = (): PriceList[] => {
       heading: 'Food Grade Wax',
       products: [
         {
-          description: 'per Kg',
+          name: 'per Kg',
           price: 'R280',
         },
       ],
@@ -67,15 +67,15 @@ export const getStandardPriceList = (): PriceList[] => {
       heading: 'Bulk Orders',
       products: [
         {
-          description: '375g x 24 (box)',
+          name: '375g x 24 (box)',
           price: 'R1300',
         },
         {
-          description: '500g x 24 (box)',
+          name: '500g x 24 (box)',
           price: 'R1725',
         },
         {
-          description: '1Kg x 12 (box)',
+          name: '1Kg x 12 (box)',
           price: 'R1620',
         },
       ],

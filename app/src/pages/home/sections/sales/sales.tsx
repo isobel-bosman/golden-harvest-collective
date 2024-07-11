@@ -34,7 +34,7 @@ const Sales = () => {
                   {list.products.map((product) => {
                     return (
                       <div className="flex basis-full justify-between">
-                        <p className="text-secondary ">{product.description}</p>
+                        <p className="text-secondary ">{product.name}</p>
                         <p className="text-secondary ">{product.price}</p>
                       </div>
                     );
@@ -81,7 +81,7 @@ const Sales = () => {
                   {bulk.products.map((product) => {
                     return (
                       <div className="flex basis-full justify-between">
-                        <p className="text-secondary ">{product.description}</p>
+                        <p className="text-secondary ">{product.name}</p>
                         <p className="text-secondary font-medium">
                           {product.price}
                         </p>

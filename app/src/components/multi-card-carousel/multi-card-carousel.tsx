@@ -34,7 +34,7 @@ const MultiCardCarousel = () => {
                   src={card.image}
                   alt="Card"
                 />
-                <h3 className="text-lg font-bold">{card.description}</h3>
+                <h3 className="text-lg font-bold">{card.name}</h3>
                 <p className="text-gray-500">{card.price}</p>
               </div>
             ))}

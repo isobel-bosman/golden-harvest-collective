@@ -6,15 +6,15 @@ export const getBulkSalesList = (): PriceList[] => {
       heading: 'Wildflower and Cosmos',
       products: [
         {
-          description: 'up to 200kg',
+          name: 'up to 200kg',
           price: 'R85.00 pkg',
         },
         {
-          description: '201 - 999kg',
+          name: '201 - 999kg',
           price: 'R80.00 pkg',
         },
         {
-          description: 'over 1000kg',
+          name: 'over 1000kg',
           price: 'R75.00 pkg',
         },
       ],
@@ -23,15 +23,15 @@ export const getBulkSalesList = (): PriceList[] => {
       heading: 'Seasonal Premium Varieties',
       products: [
         {
-          description: 'up to 200kg',
+          name: 'up to 200kg',
           price: 'R90.00 pkg',
         },
         {
-          description: '201 - 999kg',
+          name: '201 - 999kg',
           price: 'R85.00 pkg',
         },
         {
-          description: 'over 1000kg',
+          name: 'over 1000kg',
           price: 'R75.00 pkg',
         },
       ],

@@ -14,52 +14,52 @@ export const getFeaturedProducts = (): Product[] => {
   return [
     {
       image: honeyComb,
-      description: 'Honeycomb 350g',
+      name: 'Honeycomb 350g',
       price: 'R65',
     },
     {
       image: foodGradeWax,
-      description: 'Food Grade Wax',
+      name: 'Food Grade Wax',
       price: 'R280 per Kg',
     },
     {
       image: creamedHoney,
-      description: 'Creamed Honey',
+      name: 'Creamed Honey',
       price: 'R50',
     },
     {
       image: giftFavours,
-      description: 'Gift Favours 165g',
+      name: 'Gift Favours 165g',
       price: 'R43',
     },
     {
       image: wildflower375,
-      description: 'Wildflower 375g',
+      name: 'Wildflower 375g',
       price: 'R60',
     },
     {
       image: wildflower500,
-      description: 'Wildflower 500g',
+      name: 'Wildflower 500g',
       price: 'R80',
     },
     {
       image: wildflowerKg,
-      description: 'Wildflower 1Kg',
+      name: 'Wildflower 1Kg',
       price: 'R140',
     },
     {
       image: buffaloThorn500,
-      description: 'Buffalo Thorn 500g',
+      name: 'Buffalo Thorn 500g',
       price: 'R80',
     },
     {
       image: buffaloThornKg,
-      description: 'Buffalo Thorn 1Kg',
+      name: 'Buffalo Thorn 1Kg',
       price: 'R140',
     },
     {
       image: bluegum500,
-      description: 'Bluegum 500g',
+      name: 'Bluegum 500g',
       price: 'R80',
     },
   ];
