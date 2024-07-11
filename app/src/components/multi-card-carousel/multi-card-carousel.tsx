@@ -1,69 +1,9 @@
 import React from 'react';
-import honeyComb from '../../assets/images/products/honeycomb.jpeg';
-import foodGradeWax from '../../assets/images/products/food-grade-wax.jpeg';
-import creamedHoney from '../../assets/images/products/creamed-honey.jpeg';
-import giftFavours from '../../assets/images/products/gift-favours.jpeg';
-import wildflower375 from '../../assets/images/products/wildflower-375.jpeg';
-import wildflower500 from '../../assets/images/products/wildflower-500.jpeg';
-import wildflowerKg from '../../assets/images/products/wildflower-kg.jpeg';
-import buffaloThorn500 from '../../assets/images/products/buffalo-thorn-500.jpeg';
-import buffaloThornKg from '../../assets/images/products/buffalo-thorn-kg.jpeg';
-import bluegum500 from '../../assets/images/products/bluegum-500.jpeg';
+import { getFeaturedProducts } from './featured-products.function';
 
 const MultiCardCarousel = () => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
-  const cards = [
-    {
-      image: honeyComb,
-      title: 'Honeycomb 350g',
-      description: 'R65',
-    },
-    {
-      image: foodGradeWax,
-      title: 'Food Grade Wax',
-      description: 'R280 per Kg',
-    },
-    {
-      image: creamedHoney,
-      title: 'Creamed Honey',
-      description: 'R50',
-    },
-    {
-      image: giftFavours,
-      title: 'Gift Favours 165g',
-      description: 'R43',
-    },
-    {
-      image: wildflower375,
-      title: 'Wildflower 375g',
-      description: 'R60',
-    },
-    {
-      image: wildflower500,
-      title: 'Wildflower 500g',
-      description: 'R80',
-    },
-    {
-      image: wildflowerKg,
-      title: 'Wildflower 1Kg',
-      description: 'R140',
-    },
-    {
-      image: buffaloThorn500,
-      title: 'Buffalo Thorn 500g',
-      description: 'R80',
-    },
-    {
-      image: buffaloThornKg,
-      title: 'Buffalo Thorn 1Kg',
-      description: 'R140',
-    },
-    {
-      image: bluegum500,
-      title: 'Bluegum 500g',
-      description: 'R80',
-    },
-  ];
+  const cards = getFeaturedProducts();
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
@@ -94,8 +34,8 @@ const MultiCardCarousel = () => {
                   src={card.image}
                   alt="Card"
                 />
-                <h3 className="text-lg font-bold">{card.title}</h3>
-                <p className="text-gray-500">{card.description}</p>
+                <h3 className="text-lg font-bold">{card.name}</h3>
+                <p className="text-gray-500">{card.price}</p>
               </div>
             ))}
           </div>
