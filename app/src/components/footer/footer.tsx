@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
         </span>
       </div>
-      <img className="w-40 h-40 object-cover mr-10" src={GHCLogo}></img>
+      <img className="w-48 h-48 object-cover mr-10" src={GHCLogo}></img>
       <ToastContainer />
     </div>
   );
