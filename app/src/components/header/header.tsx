@@ -15,7 +15,7 @@ const Header = () => {
             About Us
           </a>
           <a className="text-base text-accent" href="#seasonal-varieties">
-            Seasonal Variaties
+            Varieties
           </a>
           <a className="text-base text-accent" href="#sales">
             Sales
@@ -24,7 +24,7 @@ const Header = () => {
             Contact Us
           </a>
           <a
-            className="rounded bg-accent px-5 py-3 text-base text-secondary"
+            className="rounded bg-accent px-5 py-3 text-base text-secondary min-w-fit"
             href="#seasonal-varieties"
           >
             View Products

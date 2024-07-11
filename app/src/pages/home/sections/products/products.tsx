@@ -6,7 +6,7 @@ const Products = () => {
   return (
     <div
       id="sales"
-      className="flex w-full flex-col justify-center bg-primary p-5 sm:p-20 gap-5 sm:gap-20"
+      className="flex w-full flex-col justify-center bg-primary p-5 sm:p-20 gap-5"
     >
       <h2 className="mb-0 text-center text-3xl font-medium text-white">
         Our Products

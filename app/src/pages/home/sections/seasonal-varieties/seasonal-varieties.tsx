@@ -7,19 +7,19 @@ const SeasonalVarieties = () => {
     <div id="seasonal-varieties" className="w-full bg-secondary p-3 sm:p-10">
       <div className="flex w-full flex-wrap h-full justify-center items-center rounded border border-solid border-white bg-secondary p-5">
         <h2 className="basis-full text-center text-3xl font-medium text-primary">
-          Seasonal variaties
+          Seasonal Varieties and Harvesting Times
         </h2>
         <p className="mb-8 text-primary basis-full text-center">
           Please note that the times listed below are for
           <b> Harvesting Times </b>
-          and the honey varieties are subject to availability.
+          and all honey varieties are subject to availability.
         </p>
         <HexagonGrid className="w-full overflow-hidden sm:w-3/4 md:w-1/3">
           <Hexagon title="Blue Gum" content="Dec - Apr" icon="blueGum" />
           <Hexagon
-            title="Buffulo Thorn"
+            title="Buffalo Thorn"
             content="Jan - Feb"
-            icon="buffuloThorn"
+            icon="buffaloThorn"
           />
           <Hexagon title="Cosmos" content="Apr - Jul" icon="cosmos" />
           <Hexagon title="Wildflower" content="All season" icon="wildFlower" />

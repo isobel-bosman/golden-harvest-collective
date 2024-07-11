@@ -1,5 +1,8 @@
 import React from 'react';
-import Warehouse from '../../../../assets/images/warehouse.jpeg';
+import Warehouse from '../../../../assets/images/about-us/warehouse.jpeg';
+import SAndE from '../../../../assets/images/about-us/S&E.jpg';
+import Beekeeping from '../../../../assets/images/about-us/beekeeping.jpg';
+import Bees from '../../../../assets/images/about-us/bees.jpg';
 
 const AboutUs = () => {
   return (
@@ -7,10 +10,29 @@ const AboutUs = () => {
       id="about-us"
       className="flex w-full flex-col items-center justify-center gap-10 bg-slate-200 p-10 sm:flex-row md:p-20 "
     >
-      <div className="basis-1/3 md:p-10">
-        <img src={Warehouse} alt="logo" />
+      <div className="flex flex-wrap basis-1/3">
+        <img className="w-1/2 p-2" src={SAndE} alt="Shane and Elaine" />
+        <img className="w-1/2 p-2" src={Warehouse} alt="Warehouse" />
+        <img
+          className="w-1/2 p-2 object-cover"
+          src={Beekeeping}
+          alt="Beekeeping"
+        />
+        <img className="w-1/2 p-2 object-cover" src={Bees} alt="Bees" />
       </div>
       <div className="flex basis-2/3 flex-col gap-5">
+        <h2 className="basis-1/3 text-3xl font-medium text-primary">
+          Meet the team
+        </h2>
+        <p className="text-xl font-medium text-secondary">
+          Shane, a professional in Asset and Finance Management, and Elaine, a
+          Senior Architectural Technologist, founded our honey business out of a
+          shared concern for the environment and the impact of imported products
+          on local markets. We are dedicated to supporting our local farming and
+          beekeeping community, aiming to foster economic growth, promote
+          sustainability, and enhance the well-being of out nation through out
+          efforts.
+        </p>
         <h2 className="basis-1/3 text-3xl font-medium text-primary">
           About us
         </h2>

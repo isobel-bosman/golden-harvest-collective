@@ -1,11 +1,11 @@
 import React, { PropsWithChildren } from 'react';
-import WildFlower from '../../assets/images/wild-flower.jpg';
-import BlueGum from '../../assets/images/blue-gum.jpg';
-import BuffuloThorn from '../../assets/images/buffulo-thorn.jpg';
-import Cosmos from '../../assets/images/cosmos.jpg';
-import Macadamia from '../../assets/images/macadamia.jpg';
-import Citrus from '../../assets/images/citrus.jpg';
-import Eucalyptus from '../../assets/images/eucalyptus.jpg';
+import WildFlower from '../../assets/images/varieties/wild-flower.jpg';
+import BlueGum from '../../assets/images/varieties/blue-gum.jpg';
+import BuffaloThorn from '../../assets/images/varieties/buffulo-thorn.jpg';
+import Cosmos from '../../assets/images/varieties/cosmos.jpg';
+import Macadamia from '../../assets/images/varieties/macadamia.jpg';
+import Citrus from '../../assets/images/varieties/citrus.jpg';
+import Eucalyptus from '../../assets/images/varieties/eucalyptus.jpg';
 
 type HexagonProps = PropsWithChildren & {
   title?: string;
@@ -16,7 +16,7 @@ type HexagonProps = PropsWithChildren & {
 const iconPath: { [icon: string]: string } = {
   wildFlower: WildFlower,
   blueGum: BlueGum,
-  buffuloThorn: BuffuloThorn,
+  buffaloThorn: BuffaloThorn,
   cosmos: Cosmos,
   macadamia: Macadamia,
   citrus: Citrus,
@@ -26,7 +26,7 @@ const iconPath: { [icon: string]: string } = {
 export type RegisteredIcons =
   | 'wildFlower'
   | 'blueGum'
-  | 'buffuloThorn'
+  | 'buffaloThorn'
   | 'cosmos'
   | 'macadamia'
   | 'citrus'

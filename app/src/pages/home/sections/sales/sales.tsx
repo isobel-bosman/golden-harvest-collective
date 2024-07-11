@@ -6,12 +6,12 @@ const Sales = () => {
   return (
     <div
       id="sales"
-      className="flex w-full flex-col bg-primary p-5 sm:p-20 gap-5 sm:gap-20"
+      className="flex w-full flex-col bg-primary p-5 sm:p-20 gap-5"
     >
-      <h2 className="mb-0 text-center text-3xl font-medium text-white">
-        Sales
-      </h2>
-
+      <h2 className="text-center text-3xl font-medium text-white">Sales</h2>
+      <p className="italic text-white basis-full text-center">
+        Please note that prices are subject to change at any time without notice
+      </p>
       <div className="flex flex-col md:flex-row w-full h-full gap-5 lg:gap-10 xl:gap-20">
         <div className="rounded-xl bg-white w-full py-5 px-5">
           <h3 className="text-secondary text-xl font-medium text-center">
