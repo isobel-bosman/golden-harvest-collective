@@ -7,7 +7,7 @@ export const getStandardPriceList = (): PriceList[] => {
       products: [
         {
           name: '375g (squeeze)',
-          price: 'R60',
+          price: 'R65',
         },
         {
           name: '500g (squeeze)',
@@ -23,7 +23,7 @@ export const getStandardPriceList = (): PriceList[] => {
         },
         {
           name: '7Kg (tub)',
-          price: 'R785',
+          price: 'R760',
         },
       ],
     },
@@ -31,8 +31,8 @@ export const getStandardPriceList = (): PriceList[] => {
       heading: 'Creamed Honey',
       products: [
         {
-          name: '300g ALOE',
-          price: 'R50',
+          name: '300g',
+          price: 'R55',
         },
       ],
     },
@@ -41,7 +41,7 @@ export const getStandardPriceList = (): PriceList[] => {
       products: [
         {
           name: '350g',
-          price: 'R65',
+          price: 'R70',
         },
       ],
     },
@@ -50,7 +50,7 @@ export const getStandardPriceList = (): PriceList[] => {
       products: [
         {
           name: '165g',
-          price: 'R43',
+          price: 'R50',
         },
       ],
     },
@@ -59,24 +59,7 @@ export const getStandardPriceList = (): PriceList[] => {
       products: [
         {
           name: 'per Kg',
-          price: 'R280',
-        },
-      ],
-    },
-    {
-      heading: 'Bulk Orders',
-      products: [
-        {
-          name: '375g x 24 (box)',
-          price: 'R1300',
-        },
-        {
-          name: '500g x 24 (box)',
-          price: 'R1725',
-        },
-        {
-          name: '1Kg x 12 (box)',
-          price: 'R1620',
+          price: 'R290',
         },
       ],
     },

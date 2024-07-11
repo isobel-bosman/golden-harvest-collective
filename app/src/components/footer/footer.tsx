@@ -1,6 +1,7 @@
 import React from 'react';
 import InstagramLogo from '../../assets/icons/instagram-logo.wine.svg';
 import WhatsAppLogo from '../../assets/icons/whatsapp-logo.svg';
+import GHCLogo from '../../assets/images/GHC_Logo_White Background.png';
 import { Bounce, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -21,7 +22,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="bottom-0 z-10 w-full bg-secondary shadow">
+    <div className="bottom-0 z-10 w-full bg-secondary shadow flex justify-between items-center">
       <div className="flex w-full flex-col gap-5 p-10 px-5 sm:px-10">
         <a className="text-lg font-semibold text-accent" href="/">
           GHC
@@ -49,6 +50,7 @@ const Footer = () => {
           </div>
         </span>
       </div>
+      <img className="w-48 h-48 object-cover mr-10" src={GHCLogo}></img>
       <ToastContainer />
     </div>
   );

@@ -15,27 +15,27 @@ export const getFeaturedProducts = (): Product[] => {
     {
       image: honeyComb,
       name: 'Honeycomb 350g',
-      price: 'R65',
+      price: 'R70',
     },
     {
       image: foodGradeWax,
       name: 'Food Grade Wax',
-      price: 'R280 per Kg',
+      price: 'R290 per Kg',
     },
     {
       image: creamedHoney,
       name: 'Creamed Honey',
-      price: 'R50',
+      price: 'R55',
     },
     {
       image: giftFavours,
       name: 'Gift Favours 165g',
-      price: 'R43',
+      price: 'R50',
     },
     {
       image: wildflower375,
       name: 'Wildflower 375g',
-      price: 'R60',
+      price: 'R65',
     },
     {
       image: wildflower500,

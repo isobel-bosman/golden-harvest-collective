@@ -20,17 +20,17 @@ const ContactUs = () => {
             </p>
           </div>
           <div>
-            <h3 className="text-xl">GENERAL ENQUIRIES &amp; BULK SALES</h3>
+            <h3 className="text-xl">SALES ENQUIRIES</h3>
             <p className="text-md">
-              Telephone Number: 079 233 8103 <br />
-              Email: shane@goldenharvestco.co.za
+              <b>Telephone Number</b>: 081 525 8959 <br />
+              <b>Email</b>: info@goldenharvestco.co.za
             </p>
           </div>
           <div>
-            <h3 className="text-xl">SALES ENQUIRIES</h3>
+            <h3 className="text-xl">GENERAL ENQUIRIES &amp; TRADE ENQUIRIES</h3>
             <p className="text-md">
-              Telephone Number: 081 525 8959 <br />
-              Email: info@goldenharvestco.co.za
+              <b>Telephone Number</b>: 079 233 8103 <br />
+              <b>Email</b>: shane@goldenharvestco.co.za
             </p>
           </div>
         </div>
