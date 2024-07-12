@@ -6,7 +6,21 @@ import TextArea from '../../../../components/text-area/text-area';
 import EmailInput from '../../../../components/email-input/email-input';
 
 const BecomeDistributor = () => {
-  const { control, handleSubmit, getValues } = useForm<Distributor>();
+  const getDefaultValues = (): Distributor => {
+    return {
+      cellNumber: '',
+      emailAddress: '',
+      motivation: '',
+      name: '',
+      occupation: '',
+      province: '',
+      town: '',
+    };
+  };
+
+  const { control, handleSubmit, getValues } = useForm<Distributor>({
+    defaultValues: getDefaultValues(),
+  });
 
   const formSubmit = () => {
     console.log({ vals: getValues() });

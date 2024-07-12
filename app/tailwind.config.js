@@ -21,7 +21,7 @@ export default {
           DEFAULT: 'var(--accent)',
         },
         warning: 'var(--warning)',
-        error: 'var(--error)',
+        error: 'var(--color-error-500)',
         success: 'var(--success)',
       },
       height: {

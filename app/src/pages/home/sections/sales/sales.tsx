@@ -26,24 +26,30 @@ const Sales = () => {
             Price List
           </h3>
           <div className="flex flex-wrap ">
-            {priceList.map((list) => {
+            {priceList.map((list, index) => {
               return (
-                <>
-                  <div className="flex mt-4 basis-full justify-between items-center">
+                <React.Fragment key={`price-container-${index}`}>
+                  <div
+                    className="flex mt-4 basis-full justify-between items-center"
+                    key={`price-${index}`}
+                  >
                     <h4 className="text-secondary min-w-fit mr-2 text-lg font-medium ">
                       {list.heading}
                     </h4>
                     <hr className="w-full border-primary" />
                   </div>
-                  {list.products.map((product) => {
+                  {list.products.map((product, prodIndex) => {
                     return (
-                      <div className="flex basis-full justify-between">
+                      <div
+                        className="flex basis-full justify-between"
+                        key={`product-${index}-${prodIndex}-${product.description}`}
+                      >
                         <p className="text-secondary ">{product.description}</p>
                         <p className="text-secondary ">{product.price}</p>
                       </div>
                     );
                   })}
-                </>
+                </React.Fragment>
               );
             })}
           </div>
@@ -73,18 +79,24 @@ const Sales = () => {
           </h3>
 
           <div className="flex flex-wrap">
-            {builkList.map((bulk) => {
+            {builkList.map((bulk, index) => {
               return (
-                <>
-                  <div className="flex mt-4 basis-full justify-between items-center">
+                <React.Fragment key={`bulk-container-${index}`}>
+                  <div
+                    className="flex mt-4 basis-full justify-between items-center"
+                    key={`bulk-${index}`}
+                  >
                     <h4 className="text-secondary text-lg mr-2 font-medium max-w-64 min-w-fit">
                       {bulk.heading}
                     </h4>
                     <hr className="basis-full border-primary" />
                   </div>
-                  {bulk.products.map((product) => {
+                  {bulk.products.map((product, chop) => {
                     return (
-                      <div className="flex basis-full justify-between">
+                      <div
+                        className="flex basis-full justify-between"
+                        key={`bulk-product-${index}-${chop}-${product.description}`}
+                      >
                         <p className="text-secondary ">{product.name}</p>
                         <p className="text-secondary font-medium">
                           {product.price}
@@ -92,7 +104,7 @@ const Sales = () => {
                       </div>
                     );
                   })}
-                </>
+                </React.Fragment>
               );
             })}
           </div>
