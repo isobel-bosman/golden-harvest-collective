@@ -21,17 +21,18 @@ const EmailInput = <T extends FieldValues>({
       key={key}
       rules={{ required: isRequired }}
       render={({ field: { value, onChange }, fieldState: { error } }) => (
-        <>
+        <div className="basis-full md:basis-1/2 pr-2">
           <label>
             {label}
             <input
               type="email"
+              className={`w-full mb-2 border border-solid rounded p-2 focus:border-primary ${error && 'border-error'}`}
               name={label}
               onChange={onChange}
               value={value}
             />
           </label>
-        </>
+        </div>
       )}
     />
   );

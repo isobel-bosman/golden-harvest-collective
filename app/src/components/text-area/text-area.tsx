@@ -21,12 +21,17 @@ const TextArea = <T extends FieldValues>({
       key={key}
       rules={{ required: isRequired }}
       render={({ field: { value, onChange }, fieldState: { error } }) => (
-        <>
+        <div className="basis-full pr-2">
           <label>
             {label}
-            <textarea name={label} onChange={onChange} value={value} />
+            <textarea
+              className={`w-full mb-2 border border-solid rounded p-2 focus:border-primary ${error && 'border-error'}`}
+              name={label}
+              onChange={onChange}
+              value={value}
+            />
           </label>
-        </>
+        </div>
       )}
     />
   );
