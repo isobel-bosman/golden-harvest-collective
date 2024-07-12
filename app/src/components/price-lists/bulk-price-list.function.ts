@@ -1,4 +1,4 @@
-import { PriceList } from '../../types/priceList.type';
+import { PriceList } from '../../types/price-list.type';
 
 export const getBulkSalesList = (): PriceList[] => {
   return [

@@ -23,3 +23,4 @@ src/config/env.json
 *.njsproj
 *.sln
 *.sw?
+.env
