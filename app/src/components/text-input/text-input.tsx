@@ -24,7 +24,7 @@ const TextInput = <T extends FieldValues>({
         <div className="basis-full md:basis-1/2 pr-2">
           <label>{label}</label>
           <input
-            className={`w-full mb-2 border border-solid rounded p-2 focus:border-primary ${error && 'border-error'}`}
+            className={`w-full mb-2 border border-solid rounded p-2 focus:border-primary ${!!error && 'border-error'}`}
             type="text"
             name={label}
             onChange={onChange}
