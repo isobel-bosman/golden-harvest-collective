@@ -30,8 +30,8 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ftp.goldenharvestco.co.za
+        server: webdisk.goldenharvestco.co.za
         port: 443
-        protocol: ftpes
+        protocol: ftps
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
