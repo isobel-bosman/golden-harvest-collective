@@ -10,7 +10,7 @@ const AboutUs = () => {
       id="about-us"
       className="flex w-full flex-col items-center justify-center gap-10 bg-slate-200 p-10 sm:flex-row md:p-20 "
     >
-      <div className="flex flex-wrap basis-1/3">
+      <div className="flex flex-wrap basis-1/2 lg:basis-1/3">
         <img className="w-1/2 p-2" src={SAndE} alt="Shane and Elaine" />
         <img className="w-1/2 p-2" src={Warehouse} alt="Warehouse" />
         <img
@@ -20,11 +20,11 @@ const AboutUs = () => {
         />
         <img className="w-1/2 p-2 object-cover" src={Bees} alt="Bees" />
       </div>
-      <div className="flex basis-2/3 flex-col gap-5">
+      <div className="flex basis-1/2 lg:basis-2/3 flex-col gap-5">
         <h2 className="basis-1/3 text-3xl font-medium text-primary">
           Meet the team
         </h2>
-        <p className="text-xl font-medium text-secondary">
+        <p className="text-base md:text-lg font-medium text-secondary">
           Shane, a professional in Asset and Finance Management, and Elaine, a
           Senior Architectural Technologist, founded our honey business out of a
           shared concern for the environment and the impact of imported products
@@ -36,7 +36,7 @@ const AboutUs = () => {
         <h2 className="basis-1/3 text-3xl font-medium text-primary">
           About us
         </h2>
-        <p className="text-xl font-medium text-secondary">
+        <p className="text-base md:text-lg font-medium text-secondary">
           GOLDEN HARVEST COLLECTIVE eloquently pays homage to the age-old
           tradition of honey harvesting in South Africa, encapsulating
           narratives of resilience and coexistence with nature in every jar.
