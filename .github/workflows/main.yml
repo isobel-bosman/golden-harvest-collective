@@ -33,9 +33,7 @@ jobs:
         username: ${{ secrets.WEBDAV_USERNAME }}
         password: ${{ secrets.WEBDAV_PASSWORD }}
         protocol: ftp-legacy
-        local-dir: "/dist/"
         server-dir: "/public_html"
         log-level: "verbose"
-        timeout: 60000
         port: 2078
         
