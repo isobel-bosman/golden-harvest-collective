@@ -32,7 +32,5 @@ jobs:
         server: ftp.goldenharvestco.co.za
         username: ${{ secrets.WEBDAV_USERNAME }}
         password: ${{ secrets.WEBDAV_PASSWORD }}
-        protocol: ftp-legacy
-        server-dir: "/public_html"
         port: 2078
         
