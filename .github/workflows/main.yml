@@ -34,6 +34,5 @@ jobs:
         password: ${{ secrets.WEBDAV_PASSWORD }}
         protocol: ftp-legacy
         server-dir: "/public_html"
-        log-level: "verbose"
         port: 2078
         
