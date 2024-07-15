@@ -26,7 +26,7 @@ const TextInput = <T extends FieldValues>({
             {label} {isRequired && '*'}
           </label>
           <input
-            className={`w-full mb-2 border border-solid rounded p-2 focus:border-primary ${error && 'border-error'}`}
+            className={`w-full mb-2 border border-solid rounded p-2 focus:border-primary ${!!error && 'border-error'}`}
             type="text"
             {...field}
             onChange={(e) => field.onChange(e.target.value)}

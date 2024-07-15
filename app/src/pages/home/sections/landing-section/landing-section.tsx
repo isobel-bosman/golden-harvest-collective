@@ -8,21 +8,32 @@ const LandingSection = () => {
       <div className="flex h-full basis-full flex-col justify-between gap-6 bg-primary p-10 sm:basis-2/3 sm:p-20">
         <div className="hidden xl:block"></div>
         <div>
-          <h1 className="text-7xl font-medium text-white">
+          <h1 className="text-5xl sm:text-7xl font-medium text-white">
             100% Pure Raw Honey. Locally Sourced.
           </h1>
-          <p className="my-10 text-xl font-medium text-secondary">
+          <p className="my-10 text-lg sm:text-xl font-medium text-secondary">
             The Golden Harvest Collective offers a lush variety of raw honey
             products sourced from local South African beekeepers.
           </p>
-          <a
-            className="w-fit rounded bg-secondary px-5 py-3 font-normal text-white cursor-pointer"
-            href="#seasonal-varieties"
-          >
-            View Products
-          </a>
+          <div className="flex items-center justify-between">
+            <a
+              className="w-fit h-fit rounded bg-secondary px-5 py-3 font-normal text-white cursor-pointer"
+              href="#seasonal-varieties"
+            >
+              View Products
+            </a>
+            <img
+              className="w-20 block lg:hidden"
+              src={MadeInSa}
+              alt="Made in South Africa"
+            ></img>
+          </div>
         </div>
-        <img className="w-20" src={MadeInSa} alt="Made in South Africa"></img>
+        <img
+          className="hidden lg:block w-20"
+          src={MadeInSa}
+          alt="Made in South Africa"
+        ></img>
       </div>
       <div className="hidden h-full basis-1/3 flex-col justify-center p-0 sm:flex lg:p-14">
         <img src={Logo} alt="logo" />
