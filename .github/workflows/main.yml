@@ -32,6 +32,6 @@ jobs:
       with:
         server: webdisk.goldenharvestco.co.za
         port: 2078
-        protocol: webdav
+        protocol: ftps-legacy
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
