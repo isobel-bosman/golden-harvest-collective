@@ -1,15 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Distributor } from '../../../../types/distributor.type';
 import TextInput from '../../../../components/text-input/text-input';
 import TextArea from '../../../../components/text-area/text-area';
 import EmailInput from '../../../../components/email-input/email-input';
+import emailjs from 'emailjs-com';
 
 const BecomeDistributor = () => {
-  const { control, handleSubmit, getValues } = useForm<Distributor>();
+  const getDefaultValues = (): Distributor => {
+    return {
+      cellNumber: '',
+      emailAddress: '',
+      motivation: '',
+      name: '',
+      occupation: '',
+      province: '',
+      town: '',
+    };
+  };
+
+  const { control, handleSubmit, getValues, reset } = useForm<Distributor>({
+    defaultValues: getDefaultValues(),
+  });
+
+  const [isLoading, setIsLoading] = useState(false);
 
   const formSubmit = () => {
-    console.log({ vals: getValues() });
+    setIsLoading(true);
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        getValues(),
+        import.meta.env.VITE_EMAILJS_USER_ID
+      )
+      .then(
+        () => {
+          reset();
+          setIsLoading(false);
+        },
+        (error) => {
+          console.log(error.text);
+          setIsLoading(false);
+        }
+      );
   };
 
   return (
@@ -78,7 +112,10 @@ const BecomeDistributor = () => {
           />
           <button
             type="submit"
-            className="w-full rounded bg-accent px-5 py-3 font-normal text-white cursor-pointer hover:bg-primary-200"
+            className={
+              'w-full rounded bg-accent px-5 py-3 font-normal text-white cursor-pointer hover:bg-primary-200 '
+            }
+            disabled={isLoading}
           >
             Submit
           </button>
