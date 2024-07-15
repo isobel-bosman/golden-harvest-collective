@@ -34,7 +34,7 @@ export type RegisteredIcons =
 
 const Hexagon = ({ title, content, icon }: HexagonProps) => {
   return (
-    <li className="hex bg-primary">
+    <li className="hex">
       <a className="hexIn bg-primary">
         <img src={iconPath[icon]} alt="" />
         <h1>{title}</h1>
