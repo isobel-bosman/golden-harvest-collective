@@ -30,7 +30,12 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ftp.goldenharvestco.co.za
-        username: ${{ secrets.WEBDAV_USERNAME }}
-        password: ${{ secrets.WEBDAV_PASSWORD }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
         port: 2078
+        protocol: ftps-legacy
+        local-dir: "/dist/"
+        server-dir: "/public_html/"
+        log-level: "verbose"
+        timeout: 60000
         
