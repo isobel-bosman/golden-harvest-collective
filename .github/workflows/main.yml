@@ -27,11 +27,14 @@ jobs:
     - run: npm i
     - run: npm run build
     
-    - name: 🤳 Deploy website
-      uses: XPH0816/webdav-deploy-action@v0.3
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        url: webdisk.goldenharvestco.co.za
+        server: webdisk.goldenharvestco.co.za
         username: ${{ secrets.WEBDAV_USERNAME }}
         password: ${{ secrets.WEBDAV_PASSWORD }}
-        local: "./"
-        remote: "public_html/"
+        local-dir: "/dist/"
+        server-dir: "/public_html"
+        log-level: "verbose"
+        timeout: 60000
+        port: 2078
