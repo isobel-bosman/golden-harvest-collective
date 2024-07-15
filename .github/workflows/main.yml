@@ -34,7 +34,6 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         port: 2078
         protocol: ftps-legacy
-        local-dir: "/dist/"
         server-dir: "/public_html/"
         log-level: "verbose"
         timeout: 60000
