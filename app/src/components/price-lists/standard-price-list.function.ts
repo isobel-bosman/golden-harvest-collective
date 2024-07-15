@@ -6,23 +6,23 @@ export const getStandardPriceList = (): PriceList[] => {
       heading: 'Raw Honey',
       products: [
         {
-          name: '375g (squeeze)',
+          description: '375g (squeeze)',
           price: 'R65',
         },
         {
-          name: '500g (squeeze)',
+          description: '500g (squeeze)',
           price: 'R80',
         },
         {
-          name: '1Kg (squeeze)',
+          description: '1Kg (squeeze)',
           price: 'R140',
         },
         {
-          name: '1.5Kg (tub)',
+          description: '1.5Kg (tub)',
           price: 'R200',
         },
         {
-          name: '7Kg (tub)',
+          description: '7Kg (tub)',
           price: 'R760',
         },
       ],
@@ -31,7 +31,7 @@ export const getStandardPriceList = (): PriceList[] => {
       heading: 'Creamed Honey',
       products: [
         {
-          name: '300g',
+          description: '300g',
           price: 'R55',
         },
       ],
@@ -40,7 +40,7 @@ export const getStandardPriceList = (): PriceList[] => {
       heading: 'Honeycomb',
       products: [
         {
-          name: '350g',
+          description: '350g',
           price: 'R70',
         },
       ],
@@ -49,7 +49,7 @@ export const getStandardPriceList = (): PriceList[] => {
       heading: 'Gift Favours',
       products: [
         {
-          name: '165g',
+          description: '165g',
           price: 'R50',
         },
       ],
@@ -58,7 +58,7 @@ export const getStandardPriceList = (): PriceList[] => {
       heading: 'Food Grade Wax',
       products: [
         {
-          name: 'per Kg',
+          description: 'per Kg',
           price: 'R290',
         },
       ],
