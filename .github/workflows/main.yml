@@ -27,11 +27,11 @@ jobs:
     - run: npm i
     - run: npm run build
     
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+    - name: 🤳 Deploy website
+      uses: XPH0816/webdav-deploy-action@v0.3
       with:
-        server: webdisk.goldenharvestco.co.za
-        port: 2078
-        protocol: ftps-legacy
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
+        url: webdisk.goldenharvestco.co.za
+        username: ${{ secrets.WEBDAV_USERNAME }}
+        password: ${{ secrets.WEBDAV_PASSWORD }}
+        local: "./"
+        remote: "public_html/"
