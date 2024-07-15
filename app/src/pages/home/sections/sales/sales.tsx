@@ -91,11 +91,11 @@ const Sales = () => {
                     </h4>
                     <hr className="basis-full border-primary" />
                   </div>
-                  {bulk.products.map((product, chop) => {
+                  {bulk.products.map((product, productIndex) => {
                     return (
                       <div
                         className="flex basis-full justify-between"
-                        key={`bulk-product-${index}-${chop}-${product.description}`}
+                        key={`bulk-product-${index}-${productIndex}-${product.description}`}
                       >
                         <p className="text-secondary ">{product.name}</p>
                         <p className="text-secondary font-medium">
