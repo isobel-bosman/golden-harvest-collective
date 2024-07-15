@@ -22,11 +22,11 @@ export const getStandardPriceList = (): PriceList[] => {
           price: 'R200',
         },
         {
-          name: '3Kg (tub)',
+          description: '3Kg (tub)',
           price: 'R390',
         },
         {
-          name: '7Kg (tub)',
+          description: '7Kg (tub)',
           price: 'R760',
         },
       ],
