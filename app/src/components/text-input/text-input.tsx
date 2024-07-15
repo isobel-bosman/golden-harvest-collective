@@ -20,15 +20,16 @@ const TextInput = <T extends FieldValues>({
       control={control}
       key={key}
       rules={{ required: isRequired }}
-      render={({ field: { value, onChange }, fieldState: { error } }) => (
+      render={({ field, fieldState: { error } }) => (
         <div className="basis-full md:basis-1/2 pr-2">
-          <label>{label}</label>
+          <label>
+            {label} {isRequired && '*'}
+          </label>
           <input
             className={`w-full mb-2 border border-solid rounded p-2 focus:border-primary ${!!error && 'border-error'}`}
             type="text"
-            name={label}
-            onChange={onChange}
-            value={value}
+            {...field}
+            onChange={(e) => field.onChange(e.target.value)}
           />
         </div>
       )}

@@ -26,7 +26,7 @@ const EmailInput = <T extends FieldValues>({
             {label}
             <input
               type="email"
-              className={`w-full mb-2 border border-solid rounded p-2 focus:border-primary ${error && 'border-error'}`}
+              className={`w-full mb-2 border border-solid rounded p-2 focus:border-primary ${!!error && 'border-error'}`}
               name={label}
               onChange={onChange}
               value={value}
