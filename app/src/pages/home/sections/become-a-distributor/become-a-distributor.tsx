@@ -49,7 +49,8 @@ const BecomeDistributor = () => {
   return (
     <div
       id="distributor"
-      className="flex w-full flex-col items-center p-5 md:p-20 gap-5 bg-bees bg-opacity-90 "
+      className="flex w-full flex-col items-center p-5 md:p-20 gap-5 bg-opacity-90"
+      style={{ background: `url(${import.meta.env.VITE_BEES_URL})` }}
     >
       <div className="rounded-xl bg-white w-full sm:w-2/3 p-5 sm:p-10 flex flex-col items-center">
         <h3 className="text-secondary text-xl font-medium text-center">
